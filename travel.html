@@ -1,0 +1,919 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<link href="https://fonts.goggleapis"
+		<title>Travelo</title>
+		<link rel="stylesheet" href="travel.css">
+
+		<link href="https://fonts.goggleapis.com/css2?family=Great+Vibes&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+		
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+		
+		<script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0.beta/js/
+		materialize.min.js"></script>
+
+		
+		<!--Bootstrap css-->
+		<link rel="stylesheet"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+		<style>
+			*
+			.feature-box{
+				border: 4px solid white;
+			}
+			
+		</style>
+
+	</head>
+	<body onload="slider()">
+
+		<!---NAVBAR--->
+			
+		<div class="navbar">
+			<h2>Travelo</h2>
+			
+			<ul>
+ 				 <li class="active"><a href="#"><i class="fa fa-home"></i> Home</a></li> 
+ 				 	<li><a href="about.html"><i class="fas fa-user"></i> About</a>
+ 				 		<div class="sub-menu-1">
+ 				 			<ul>
+ 				 				<li><a href="#">Mission</a></li>
+ 				 				<li><a href="#">Vision</a></li>
+ 				 				<li><a href="#">Why Us</a></li>
+ 				 			</ul>
+ 				 		</div>
+ 				 	</li>
+ 				 	<li><a href="#"><i class="fa fa-destination"></i> Featured Destinations</a>
+ 				 	</li>
+ 				 	<li><a href="#"><i class="fa fa-picture-o"></i> Gallery</a>
+ 				 		<div class="sub-menu-1">
+ 				 			<ul>
+ 				 				<li><a href="#">Naivasha</a></li>
+ 				 				<li><a href="#">Maasai Mara</a></li>
+ 				 				<li><a href="#">Rift Valley</a></li>
+ 				 				<li><a href="#">Lamu</a></li>
+ 				 			</ul>
+ 				 		</div>
+ 				 	</li>  
+  					<li><a href="#"><i class="fa fa-clone"></i> Services</a>
+  						<div class="sub-menu-1">
+ 				 			<ul>
+ 				 				<li class="hover-me"><a href="#">Good Food</a>
+ 				 					<i class="fa fa-angle-right"></i>
+ 				 					<div class="sub-menu-2">
+ 				 						<ul>
+ 				 							<li><a href="#">Kenyan Food</a></li>
+ 				 							<li><a href="#">Japanese Food</a></li>
+ 				 							<li><a href="#">Chinese Food</a></li>
+ 				 							<li><a href="#">French Dishes</a></li>
+ 				 						</ul>
+ 				 					</div>
+ 				 				</li>
+ 				 		
+  								<li class="hover-me"><a href="#">Resort</a><i class=
+  									"fa fa-angle-right"></i>
+ 				 					<div class="sub-menu-2">
+ 				 						<ul>
+ 				 							<li><a href="#">Beach Resort</a></li>
+ 				 							<li><a href="#">River Resort</a></li>
+ 				 							<li><a href="#">Luxury Resort</a></li>
+ 				 							<li><a href="#">Super Luxurious Resorts</a></li>
+ 				 						</ul>
+ 				 					</div>
+ 				 				</li>
+ 
+ 				 				<li><a href="#">Mountain Climbing</a></li>
+ 				 				<li><a href="#">Hot Air Baloon</a></li>
+ 				 			</ul>
+ 						</div>
+
+  				<li><a href="#"><i class="fa fa-gift"></i> Packages</a></li> 
+  				<li><a href="#"><i class="fa fa-edit"></i> Historical Places</a></li>
+  				<li><a href="#"><i class="fa fa-phone"></i>Contact</a></li>
+  			</ul>
+  		</div>
+
+	<!-----SLIDER IMAGE----------->
+	<div class="banner">
+		<div class="slider">
+			<img src="images/poster2.jpg style=width:100%" alt="" id="slideImg">
+		</div>
+		<div class="overlay">
+			<div class="content">
+				<h1>TRAVEL WITH US!</h1>
+				<h3>To experience the difference.</h3>
+
+				<div>
+					<button type="button">WATCH MORE</button>
+					<button type="button" class="btn-2">SUBSCRIBE</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script>
+		var slideImg = document.getElementById("slideImg");
+		var images = new Array(
+			"images/poster2.jpg",
+			"images/poster4.jpg",
+			"images/poster6.jpg",
+			"images/poster9.jpg"
+			);
+		var len = images.length;
+		var i = 0;
+
+		function slider(){
+			if(i > len-1){
+				i = 0;
+			}
+			slideImg.src = images[i];
+			i++;
+			setTimeout('slider()',3000);
+		}
+	</script>
+
+	
+	<!---END SLIDER  SECTION--->
+
+	
+	
+
+	<!-----END OF NAVBAR-------->
+
+		
+<!-------------ABOUT SECTION----->
+		<section class="about-us">
+			<h1>About Us</h1>
+				<div class="row">
+					<div class="col-md-4">
+
+						<div class="main">
+							<div class="about-box">
+								<h4 class="text-blank">Mission</h4>
+								<p>Lorem ipsum dolor sit amet 
+									consectetur adipisicing elit. Cum minima amet, assumenda aliquid temporibus molestiae.
+								</p>
+							</div>
+							<div class="shadow1"></div>
+							<div class="shadow2"></div>
+						</div>
+					</div>
+				<!------------->
+					<div class="col-md-4">
+
+						<div class="main">
+							<div class="about-box">
+								<h4 class="text-blank">Vision</h4>
+								<p class="mb-4">Lorem ipsum dolor sit amet 
+									consectetur adipisicing elit. Cum minima amet, assumenda aliquid temporibus molestiae.
+								</p>
+							</div>
+							<div class="shadow1"></div>
+							<div class="shadow2"></div>
+						</div>
+					</div>
+				<!--------------->
+					<div class="col-md-4">
+
+						<div class="main">
+							<div class="about-box">
+								<h4 class="text-blank">Why Us</h4>
+								<p class="mb-4">Lorem ipsum dolor sit amet 
+									consectetur adipisicing elit. Cum minima amet, assumenda aliquid temporibus molestiae.
+								</p>
+							</div>
+							<div class="shadow1"></div>
+							<div class="shadow2"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+<!---close about section--->
+
+
+
+
+			
+
+		<section class="features">
+			<h1>Featured Destinations</h1>
+			<!-- BEGIN Destination Images -->
+			<div class="container">
+				<div class="row">
+					<!-- inside the row -->
+						<div class="col-md-4">
+							<div class="feature-box">
+								<div class="feature-img">
+								<img src="images/poster3.jpg" class="destination-image">
+								<div class="price">
+									<p>$74</p>
+								</div>
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half-o"></i>
+									<i class="fa fa-star-half-o"></i>
+								</div>
+							</div>
+							<div class="feature-details">
+								<h4>Naivasha</h4>
+								<p>Subscribe Mariah Tutorials Youtube Channel 
+									to watch more videos on Web Development,
+								 UI Designing and digital marketing. Press
+								  the notification bell icon to get immediate
+								   notification of new videos</p>
+							<div>
+							<span><i class="fa fa-map-marker"></i>Naivasha</span>
+							<span><i class="fa fa-sun-o"></i>4 Days</span>
+							<span><i class="fa fa-moon-o"></i>3 Nights</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+				<div class="col-md-4">
+					<div class="feature-box">
+						<div class="feature-img">
+							<img src="images/poster7.jpg">
+							<div class="price">
+								<p>$72</p>
+							</div>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-half-o"></i>
+								<i class="fa fa-star-half-o"></i>
+							</div>
+						</div>
+						<div class="feature-details">
+							<h4>Nairobi</h4>
+							<p>Subscribe Mariah Tutorials Youtube Channel 
+							to watch more videos on Web Development,
+							UI Designing and digital marketing. Press
+							the notification bell icon to get immediate
+							notification of new videos</p>
+						<div>
+						<span><i class="fa fa-map-marker"></i>Nairobi</span>
+						<span><i class="fa fa-sun-o"></i>4 Days</span>
+						<span><i class="fa fa-moon-o"></i>3 Nights</span>
+					</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="feature-box">
+					<div class="feature-img">
+						<img src="images/poster14.jpg" class="destination-image">
+						<div class="price">
+							<p>$75</p>
+						</div>
+						<div class="rating">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-half-o"></i>
+							<i class="fa fa-star-half-o"></i>
+						</div>
+					</div>
+					<div class="feature-details">
+						<h4>Rift Valley</h4>
+						<p>Subscribe Mariah Tutorials Youtube Channel 
+						to watch more videos on Web Development,
+						 UI Designing and digital marketing. Press
+						the notification bell icon to get immediate
+						notification of new videos</p>
+						<div>
+							<span><i class="fa fa-map-marker"></i>Nairobi</span>
+							<span><i class="fa fa-sun-o"></i>4 Days</span>
+							<span><i class="fa fa-moon-o"></i>3 Nights</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+					<!-- end of the row --->
+			
+			<!-- END Destination Images -->
+
+		<section class="gallery">
+			<h1>Travelling Gallery</h1>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="gallery-box">
+								<img src="images/poster18.jpg">
+								<h4>Naivasha</h4>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="gallery-box">
+								<img src="images/poster13.jpg">
+								<h4>Maasai Mara National Reserve</h4>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="gallery-box">
+								<img src="images/poster14.jpg">
+								<h4>Rift Valley</h4>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="gallery-box">
+								<img src="images/poster17.jpg">
+								<h4>Lamu</h4>
+							</div>
+						</div>
+
+		</section>
+
+		<!------SERVICES SECTION-------->
+		<section class="services section-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="section-title">
+							<h2 class="text-center">Services We Provide</h2>
+							<p>Lorem ipsum dolor sit amet 
+								consectetur adipisicing elit. Cum minima amet, assumenda aliquid temporibus molestiae.
+							</p>
+						</div>
+					</div>
+				<!---------------->
+					<div class="col-lg-8">
+						<div class="row">
+							<div class="col-md-6 d-flex align-items-stretch">
+								<div class="icon-circle purple">
+									<div class="icon">
+										<i class="fas fa-drumstick-bite"></i>
+									</div>
+									<h4 class="text-white">Good Food</h4>
+									<p>Lorem ipsum dolor sit amet 
+										consectetur adipisicing elit.
+										 Cum minima amet, assumenda aliquid
+									</p>
+								</div>
+							</div>
+							<!--------->
+							<div class="col-md-6 d-flex align-items-stretch  mt-4 mt-lg-0">
+								<div class="icon-circle pink">
+									<div class="icon">
+										<i class="fas fa-umbrella-beach"></i>
+									</div>
+									<h4 class="text-white">Resort</h4>
+									<p>Lorem ipsum dolor sit amet 
+										consectetur adipisicing elit.
+										 Cum minima amet, assumenda aliquid
+									</p>
+								</div>
+							</div>
+							<div class="col-md-6 d-flex align-items-stretch  mt-4">
+								<div class="icon-circle yellow">
+									<div class="icon">
+										<i class="fas fa-hiking"></i>
+									</div>
+									<h4 class="text-white">Mountain-Climbing</h4>
+									<p>Lorem ipsum dolor sit amet 
+										consectetur adipisicing elit.
+										 Cum minima amet, assumenda aliquid
+									</p>
+								</div>
+							</div>
+							<!------------->
+							<div class="col-md-6 d-flex align-items-stretch  mt-4">
+								<div class="icon-circle blue">
+									<div class="icon">
+										<i class="fas fa-mountain"></i>
+									</div>
+									<h4 class="text-white">Hot Air Ballon</h4>
+									<p>Lorem ipsum dolor sit amet 
+										consectetur adipisicing elit.
+										 Cum minima amet, assumenda aliquid
+									</p>
+								</div>
+							</div>
+							<!---------->
+						</div>
+					</div>
+				</div>
+			</section>
+<!--------END OF SERVICES SECTION-------->
+<!------TEAM SECTION--------->
+			<section class="team section-bg mt-5">
+				<div class="container">
+					<div class="section title">
+						<h2 class="text-center">Team</h2>
+						<p class="text-center">Lorem ipsum dolor sit amet 
+							consectetur adipisicing elit.
+							 Cum minima amet, assumenda aliquid
+						</p>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+							<div class="member">
+								<div class="member_img">
+									<img src="images/photo3.jpg" class="img-fluid" alt="">
+									<div class="social">
+										<a href=""><i class="fab fa-facebook"></i></a>
+										<a href=""><i class="fab fa-twitter"></i></a>
+										<a href=""><i class="fab fa-instagram"></i></a>
+										<a href=""><i class="fab fa-linkedin"></i></a>
+									</div>
+								</div>
+								<div class="member-info">
+									<h4>Keith Muli</h4>
+									<span>Position Specification</span>
+								</div>
+							</div>
+						</div>
+						<!------>
+						<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+							<div class="member">
+								<div class="member_img">
+									<img src="images/photo4.jpg"class="img-fluid" alt="">
+									<div class="social">
+										<a href=""><i class="fab fa-facebook"></i></a>
+										<a href=""><i class="fab fa-twitter"></i></a>
+										<a href=""><i class="fab fa-instagram"></i></a>
+										<a href=""><i class="fab fa-linkedin"></i></a>
+									</div>
+								</div>
+								<div class="member-info">
+									<h4>Amina Abdi</h4>
+									<span>Position Specification</span>
+								</div>
+							</div>
+						</div>
+						<!--------->
+						<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+							<div class="member">
+								<div class="member_img">
+									<img src="images/photo5.jpg"class="img-fluid" alt="">
+									<div class="social">
+										<a href=""><i class="fab fa-facebook"></i></a>
+										<a href=""><i class="fab fa-twitter"></i></a>
+										<a href=""><i class="fab fa-instagram"></i></a>
+										<a href=""><i class="fab fa-linkedin"></i></a>
+									</div>
+								</div>
+								<div class="member-info">
+									<h4>Lupita Nyong'o</h4>
+									<span>Position Specification</span>
+								</div>
+							</div>
+						</div>
+						<!------>
+						<div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+							<div class="member">
+								<div class="member_img">
+									<img src="images/photo6.jpg"class="img-fluid" alt="">
+									<div class="social">
+										<a href=""><i class="fab fa-facebook"></i></a>
+										<a href=""><i class="fab fa-twitter"></i></a>
+										<a href=""><i class="fab fa-instagram"></i></a>
+										<a href=""><i class="fab fa-linkedin"></i></a>
+									</div>
+								</div>
+								<div class="member-info">
+									<h4>Nancy Wanjugu</h4>
+									<span>Position Specification</span>
+								</div>
+							</div>
+						</div>
+						<!-------->
+					</div>
+				</div>
+			</section>
+			<!--------END OF TEAM SECTION------->
+			<!-----PACKAGE SECTION---->
+			<section class="package section-padding mt-3">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-xl-5">
+							<div class="section-title text-center">
+								<h2 class="py-3">Packages We Offer</h2>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-xl-6">
+							<div class="package-1">
+								<img src="images/fa-3.jpg" class="img-fluid" alt="">
+								<div class="package-text">
+									<p>Lorem ipsum dolor sit amet 
+										consectetur adipisicing elit.
+							 			Cum minima amet, assumenda aliquid
+									</p>
+									<a href="#" class="btn-package p-2">View Details</a>
+								</div>
+							</div>
+						</div>
+						<!------>
+						<div class="col-md-6 col-xl-6">
+							<div class="package-1">
+								<img src="images/fa-2.jpg" class="img-fluid" alt="">
+								<div class="package-text">
+									<p>Lorem ipsum dolor sit amet 
+										consectetur adipisicing elit.
+							 			Cum minima amet, assumenda aliquid
+									</p>
+									<a href="#" class="btn-package p-2">View Details</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-------END PACKAGE SECTION----->
+			<!-----HISTORICAL PLACES SECTION----->
+			<section class="historical section mt-2">
+				<div class="historical-places">
+					<div class="container">
+						<div class="row-justify-content-center">
+							<div class="col-lg-6">
+								<div class="section-title text-center mb-70">
+									<h3 class="text-uppercase text-center">historical places</h3>
+									<p class="text-center">Lorem ipsum dolor sit amet 
+										consectetur adipisicing elit.
+							 			Cum minima amet, assumenda aliquid
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-4 col-md-6">
+								<div class="single-dest">
+									<div class="thumb">
+										<img src="images/fa-6.jpg" class="img-fluid" alt="">
+										<a href="#" class="price">$400</a>
+									</div>
+									<div class="dest-info">
+										<a href="#">
+											<h3>Lorem</h3>
+										</a>
+										<p>Lorem ipsum dolor sit amet.</p>
+										<div class="rating d-flex justify-content-between">
+											<span class="d-flex justify-content-
+												center align-items-center">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<a href="#">(10 Review)</a>
+											</span>
+											<div class="days">
+												<i class="fas fa-clock-o">
+													<a href="#">2 Days</a>
+												</i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!----------->
+							<div class="col-lg-4 col-md-6">
+								<div class="single-dest">
+									<div class="thumb">
+										<img src="images/fa-2.jpg" class="img-fluid" alt="">
+										<a href="#" class="price">$400</a>
+									</div>
+									<div class="dest-info">
+										<a href="#">
+											<h3>Lorem</h3>
+										</a>
+										<p>Lorem ipsum dolor sit amet.</p>
+										<div class="rating d-flex justify-content-between">
+											<span class="d-flex justify-content-
+												center align-items-center">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<a href="#">(10 Review)</a>
+											</span>
+											<div class="days">
+												<i class="fas fa-clock-o">
+													<a href="#">2 Days</a>
+												</i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!----------->
+							<div class="col-lg-4 col-md-6">
+								<div class="single-dest">
+									<div class="thumb">
+										<img src="images/fa-3.jpg" class="img-fluid" alt="">
+										<a href="#" class="price">$400</a>
+									</div>
+									<div class="dest-info">
+										<a href="#">
+											<h3>Lorem</h3>
+										</a>
+										<p>Lorem ipsum dolor sit amet.</p>
+										<div class="rating d-flex justify-content-between">
+											<span class="d-flex justify-content-
+												center align-items-center">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<a href="#">(10 Review)</a>
+											</span>
+											<div class="days">
+												<i class="fas fa-clock-o">
+													<a href="#">2 Days</a>
+												</i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!----------->
+							<div class="col-lg-4 col-md-6">
+								<div class="single-dest">
+									<div class="thumb">
+										<img src="images/fa-4.jpg" class="img-fluid" alt="">
+										<a href="#" class="price">$400</a>
+									</div>
+									<div class="dest-info">
+										<a href="#">
+											<h3>Lorem</h3>
+										</a>
+										<p>Lorem ipsum dolor sit amet.</p>
+										<div class="rating d-flex justify-content-between">
+											<span class="d-flex justify-content-
+												center align-items-center">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<a href="#">(10 Review)</a>
+											</span>
+											<div class="days">
+												<i class="fas fa-clock-o">
+													<a href="#">2 Days</a>
+												</i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!----------->
+							<div class="col-lg-4 col-md-6">
+								<div class="single-dest">
+									<div class="thumb">
+										<img src="images/fa-5.jpg" class="img-fluid" alt="">
+										<a href="#" class="price">$400</a>
+									</div>
+									<div class="dest-info">
+										<a href="#">
+											<h3>Lorem</h3>
+										</a>
+										<p>Lorem ipsum dolor sit amet.</p>
+										<div class="rating d-flex justify-content-between">
+											<span class="d-flex justify-content-
+												center align-items-center">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<a href="#">(10 Review)</a>
+											</span>
+											<div class="days">
+												<i class="fas fa-clock-o">
+													<a href="#">2 Days</a>
+												</i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!----------->
+							<div class="col-lg-4 col-md-6">
+								<div class="single-dest">
+									<div class="thumb">
+										<img src="images/fa-6.jpg" class="img-fluid" alt="">
+										<a href="#" class="price">$400</a>
+									</div>
+									<div class="dest-info">
+										<a href="#">
+											<h3>Lorem</h3>
+										</a>
+										<p>Lorem ipsum dolor sit amet.</p>
+										<div class="rating d-flex justify-content-between">
+											<span class="d-flex justify-content-
+												center align-items-center">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<a href="#">(10 Review)</a>
+											</span>
+											<div class="days">
+												<i class="fas fa-clock-o">
+													<a href="#">2 Days</a>
+												</i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!----------->
+						</div>
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="btn-hist text-center">
+									<div><a href="#" class="btn btn-hist">More Places</a></div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<!-------END HISTORICAL SECTION---->
+
+	<!---users feedback---->
+
+		<section class="users-feedback">
+			<h1>Users Review</h1>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="user-review">
+								<p>Subscribe Mariah TutorialsYoutube channel 
+								to watch more videos. Press the bell icon 
+								to get immediate notification of new videos.</p>
+									<h5>Wangui Mariah</h5>
+										<small>Naivasha</small>
+										</div>
+											<img src="images/photo.jpg">
+									
+							</div>
+	
+							<div class="col-md-4">
+								<div class="user-review">
+									<p>Subscribe Mariah TutorialsYoutube channel 
+									to watch more videos. Press the bell icon 
+									to get immediate notification of new videos.</p>
+									<h5>Mwangi Anthony</h5>
+									<small>Kericho</small>
+								</div>
+									<img src="images/photo1.jpg">
+							</div>
+
+							<div class="col-md-4">
+								<div class="user-review">
+									<p>Subscribe Mariah TutorialsYoutube channel 
+									to watch more videos. Press the bell icon 
+									to get immediate notification of new videos.</p>
+									<h5>Greg Hill</h5>
+									<small>Nairobi</small>
+								</div>
+									<img src="images/photo2.jpg">
+						
+							</div>
+					</div>
+				</div>
+		</section>
+		<!---end user review ---->
+		<!----contact ---->
+		<div class="hero">
+
+			<form>
+				<div class="row">
+					<div class="input-group">
+						<input type="text" id="name" required>
+						<label for="name"><i class="fas fa-user"></i> Your Name</label>
+					</div>
+					<div class="input-group">
+						<input type="text" id="number" required>
+						<label for="number"><i class="fas fa-phone-square-alt"></i>Phone No.</label>
+					</div>
+				</div>
+				<div class="input-group">
+					<input type="text" id="email" required>
+					<label for="email"><i class="fas fa-envelope"></i>Email Id</label>
+				</div>
+				<div class="input-group">
+					<textarea id="message" rows="8" required></textarea>
+					<label for="message"><i class="fas fa-comments"></i>Your Message</label>
+				</div>
+				<button type="submit"><i class="fas fa-paper-plane"></i>SUBMIT</button>
+			</form>
+		</div>
+
+		<!----BLOG SECTION--------->
+		<section class="recent-blog">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2 class="text-center pb-2">Recent Blog</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-6">
+						<div class="single-blog">
+							<img src="images/img1.jpg" class="img-fluid" alt="">
+							<div class="blog-detail">
+								<div class="blog-date">July 21st,2021</div>
+								<a href="#" class="tag">#lorem</a>
+							</div>
+							<h4><a href="#">Lorem ipsum dolor sit amet consecetuer.</a></h4>
+						</div>
+					</div>
+					<!------>
+					<div class="col-lg-4 col-md-6">
+						<div class="single-blog">
+							<img src="images/img2.jpg" class="img-fluid" alt="">
+							<div class="blog-detail">
+								<div class="blog-date">July 21st,2021</div>
+								<a href="#" class="tag">#lorem</a>
+							</div>
+							<h4><a href="#">Lorem ipsum dolor sit amet consecetuer.</a></h4>
+						</div>
+					</div>
+					<!-------->
+					<div class="col-lg-4 col-md-6">
+						<div class="single-blog">
+							<img src="images/img3.jpg" class="img-fluid" alt="">
+							<div class="blog-detail">
+								<div class="blog-date">July 21st,2021</div>
+								<a href="#" class="tag">#lorem</a>
+							</div>
+							<h4><a href="#">Lorem ipsum dolor sit amet consecetuer.</a></h4>
+						</div>
+					</div>
+					<!-------->
+				</div>
+			</div>
+		</section>
+
+
+		<section class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<img src="images/logo1.jpg" class="footer-logo">
+						<p>Subscribe Mariah Tutorials Youtube Channel 
+						to watch more videos on Web Development,
+				 		UI Designing and digital marketing. Press
+				  		the notification bell icon to get immediate
+				   		notification of new videos</p>
+					</div>
+
+					<div class="col-md-3">
+						<h4>Features</h4>
+						<p>Deals and offers</p>
+						<p>Customer Reviews</p>
+						<p>Cancellation Policy</p>
+					</div>
+
+					<div class="col-md-3">
+						<h4>Quick Contact</h4>
+						<p><i class="fa fa-phone-square"></i> +254711000000</p>
+						<p><i class="fa fa-envelope"></i>mariahtravels@gmail.com</p>
+						<p><i class="fa fa-home"></i>Murang'a rd, Nairobi</p>
+					</div>
+
+					<div class="col-md-3">
+						<h4>Follow Us On</h4>
+						<p><i class="fa fa-facebook-official"></i>Facebook</p>
+						<p><i class="fa fa-youtube-play"></i>Youtube</p>
+						<p><i class="fa fa-twitter"></i>Twitter</p>
+					</div>
+			</div><hr>
+				<p class="copyright">Made with<i class="fa fa-heart"></i>by Wangui Mariah</p>
+			</div>
+		</section>
+	</div>
+</body>
+</html>
