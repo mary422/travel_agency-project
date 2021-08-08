@@ -1,0 +1,43 @@
+<html>
+<head>
+	<style>
+		body{
+			background-color: whitesmoke;
+		}
+		input{
+			width: 40%;
+			height: 5%;
+			border: 1px;
+			border-radius: 5px;
+			padding: 8px 15px 8px 15px;
+			margin: 10px 0px 15px 0px;
+			box-shadow: 1px 1px 2px 1px grey;
+		}
+
+	</style>
+</head>
+<body>
+
+	<form action="signup.php" method="POST">
+		<h2>Sign Up</h2>
+		<?php if (isset($_GET['error'])) { ?>
+		<p class="error"><?php echo $_GET['error']; ?></p>
+		<?php } ?>
+
+		<label>Name</label>
+		<input type="text" name="name" placeholder="Name"><br>
+
+		<label>User Name</label>
+		<input type="text" name="uname" placeholder="userName"><br>
+
+		<label>Password</label>
+		<input type="password" name="password" placeholder="password"><br>
+
+		<label>Re Password</label>
+		<input type="password" name="re_password" placeholder="re_password"><br>
+
+		<button type="submit">Sign Up</button>
+		<a href="login.php" class="ca">Already have an account?></a>
+	</form>
+</body>
+</html>

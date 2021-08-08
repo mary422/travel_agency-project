@@ -3,8 +3,11 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-		<link href="https://fonts.goggleapis"
+		<link href="https://fonts.goggleapis">
+		<script src="https://www.goggle.com/recaptcha/api.js"></script>
+
 		<title>Travelo</title>
 		<link rel="stylesheet" href="travel.css">
 
@@ -17,8 +20,7 @@
 		<link rel="stylesheet" href="css/owl.theme.default.min.css">
 		
 		<script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0.beta/js/
-		materialize.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3.css/all/.min.css"></script>
 
 		
 		<!--Bootstrap css-->
@@ -34,11 +36,11 @@
 		</style>
 
 	</head>
-	<body onload="slider()">
+<body onload="slider()">
 
 		<!---NAVBAR--->
-			
-		<div class="navbar">
+<section class="navbar-section">	
+		<div class="menu-bar">
 			<h2>Travelo</h2>
 			
 			<ul>
@@ -101,25 +103,50 @@
   				<li><a href="#"><i class="fa fa-phone"></i>Contact</a></li>
   			</ul>
   		</div>
+  	</section>
 
 	<!-----SLIDER IMAGE----------->
-	<div class="banner">
-		<div class="slider">
-			<img src="images/poster2.jpg style=width:100%" alt="" id="slideImg">
-		</div>
-		<div class="overlay">
-			<div class="content">
-				<h1>TRAVEL WITH US!</h1>
-				<h3>To experience the difference.</h3>
+		<div class="banner">
+			<div class="slider">
+				<img src="images/poster2.jpg style=width:100%" alt="" id="slideImg">
+			</div>
+			<div class="overlay">
+				<div class="content">
+					<h1>TRAVEL WITH US!</h1>
+					<h3>To experience the difference.</h3>
 
 				<div>
 					<button type="button">WATCH MORE</button>
-					<button type="button" class="btn-2">SUBSCRIBE</button>
+					<a href="subscribe.php" button type="button" class="btn-2">SUBSCRIBE</button></a>
+
+					<input type="checkbox" id="toggle">
+					<label for="toggle" class="show-btn">Show Modal</label>
+					<div class="wrapper">
+						<label for="toggle" class="cancel-btn"><i class="fas fa-times"></i></label>
+						<div class="icon"><i class="far fa-envelope"></i></div>
+						<div class="content">
+							<header>Become a subscriber</header>
+							<p>Subscribe to our blog and get the latest updates straight to your inbox.</p>
+						</div>
+						<form action="subscribe.php" method="POST">
+							<div class="field">
+
+								<input type="text" name="email" placeholder="Email Address" required value="<?php echo $userEmail ?>">
+							</div>
+							<div class="field btn">
+								<input type="submit" value="Subscribe">
+							</div>
+						</form>
+						<div class="text">We do not share your information.</div>
+					</div>
+
+					
 				</div>
 			</div>
 		</div>
-
 	</div>
+
+
 
 	<script>
 		var slideImg = document.getElementById("slideImg");
@@ -151,7 +178,7 @@
 	<!-----END OF NAVBAR-------->
 
 		
-<!-------------ABOUT SECTION----->
+<!-------------ABOUT SECTION---->
 		<section class="about-us">
 			<h1>About Us</h1>
 				<div class="row">
@@ -159,38 +186,48 @@
 
 						<div class="main">
 							<div class="about-box">
+								
 								<h4 class="text-blank">Mission</h4>
 								<p>Lorem ipsum dolor sit amet 
-									consectetur adipisicing elit. Cum minima amet, assumenda aliquid temporibus molestiae.
+									consectetur adipisicing elit. 
+									Cum minima amet, assumenda 
+									aliquid temporibus molestiae.
 								</p>
 							</div>
 							<div class="shadow1"></div>
 							<div class="shadow2"></div>
 						</div>
 					</div>
-				<!------------->
+				
 					<div class="col-md-4">
 
 						<div class="main">
 							<div class="about-box">
+
 								<h4 class="text-blank">Vision</h4>
 								<p class="mb-4">Lorem ipsum dolor sit amet 
-									consectetur adipisicing elit. Cum minima amet, assumenda aliquid temporibus molestiae.
+									consectetur adipisicing elit. 
+									Cum minima amet, assumenda
+									 aliquid temporibus molestiae.
 								</p>
 							</div>
 							<div class="shadow1"></div>
 							<div class="shadow2"></div>
 						</div>
 					</div>
-				<!--------------->
+				
 					<div class="col-md-4">
 
 						<div class="main">
 							<div class="about-box">
+								
 								<h4 class="text-blank">Why Us</h4>
 								<p class="mb-4">Lorem ipsum dolor sit amet 
-									consectetur adipisicing elit. Cum minima amet, assumenda aliquid temporibus molestiae.
+									consectetur adipisicing elit.
+									 Cum minima amet, assumenda
+									  aliquid temporibus molestiae.
 								</p>
+								
 							</div>
 							<div class="shadow1"></div>
 							<div class="shadow2"></div>
@@ -211,41 +248,41 @@
 			<div class="container">
 				<div class="row">
 					<!-- inside the row -->
-						<div class="col-md-4">
+					<div class="col-md-4">
 							<div class="feature-box">
 								<div class="feature-img">
-								<img src="images/poster3.jpg" class="destination-image">
-								<div class="price">
-									<p>$74</p>
+									<img src="images/poster5.jpg" class="destination-image">
+									<div class="price">
+										<p>$74</p>
+									</div>
+									<div class="rating">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-half-o"></i>
+										<i class="fa fa-star-half-o"></i>
+									</div>
 								</div>
-								<div class="rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star-half-o"></i>
-									<i class="fa fa-star-half-o"></i>
+								<div class="feature-details">
+									<h4>Naivasha</h4>
+									<p>Subscribe Mariah Tutorials Youtube Channel 
+									to watch more videos on Web Development,
+								 	UI Designing and digital marketing. Press
+								  	the notification bell icon to get immediate
+								   	notification of new videos</p>
+									<div>
+										<span><i class="fa fa-map-marker"></i>Naivasha</span>
+										<span><i class="fa fa-sun-o"></i>4 Days</span>
+										<span><i class="fa fa-moon-o"></i>3 Nights</span>
+									</div>
 								</div>
 							</div>
-							<div class="feature-details">
-								<h4>Naivasha</h4>
-								<p>Subscribe Mariah Tutorials Youtube Channel 
-									to watch more videos on Web Development,
-								 UI Designing and digital marketing. Press
-								  the notification bell icon to get immediate
-								   notification of new videos</p>
-							<div>
-							<span><i class="fa fa-map-marker"></i>Naivasha</span>
-							<span><i class="fa fa-sun-o"></i>4 Days</span>
-							<span><i class="fa fa-moon-o"></i>3 Nights</span>
 						</div>
-					</div>
-				</div>
-			</div>
 
 				<div class="col-md-4">
 					<div class="feature-box">
 						<div class="feature-img">
-							<img src="images/poster7.jpg">
+							<img src="images/poster7.jpg" class="destination-image">
 							<div class="price">
 								<p>$72</p>
 							</div>
@@ -264,14 +301,14 @@
 							UI Designing and digital marketing. Press
 							the notification bell icon to get immediate
 							notification of new videos</p>
-						<div>
-						<span><i class="fa fa-map-marker"></i>Nairobi</span>
-						<span><i class="fa fa-sun-o"></i>4 Days</span>
-						<span><i class="fa fa-moon-o"></i>3 Nights</span>
-					</div>
+							<div>
+								<span><i class="fa fa-map-marker"></i>Nairobi</span>
+								<span><i class="fa fa-sun-o"></i>4 Days</span>
+								<span><i class="fa fa-moon-o"></i>3 Nights</span>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
 
 			<div class="col-md-4">
 				<div class="feature-box">
@@ -804,30 +841,84 @@
 		</section>
 		<!---end user review ---->
 		<!----contact ---->
-		<div class="hero">
 
-			<form>
-				<div class="row">
-					<div class="input-group">
-						<input type="text" id="name" required>
-						<label for="name"><i class="fas fa-user"></i> Your Name</label>
+
+	<section class="contact">
+		<div class="container">
+			<div class="row col-md-6 contact">
+				<div class="panel panel-primary">
+					<div class="panel-heading text-center">
+						<h1>CONTACT US</h1>
 					</div>
-					<div class="input-group">
-						<input type="text" id="number" required>
-						<label for="number"><i class="fas fa-phone-square-alt"></i>Phone No.</label>
+					<div class="panel-body">
+						<form action="index.php" method="post">
+							<div class="form-group">
+								<label for="firstName">First Name</label>
+								<input type="text" class="form-control" id="firstName" name="firstName"/>
+							</div>
+							<div class="form-group">
+								<label for="lastName">Last Name</label>
+								<input type="text" class="form-control" id="lastName" name="lastName"/>
+							</div>
+							<div class="form-group">
+								<label for="gender">Gender</label>
+								<div>
+									<label for="male" class="radio-inline">
+										<input type="radio" name="gender" value="m" id="Male">Male</label>
+									</label>
+									<label for="female" class="radio-inline">
+										<input type="radio" name="gender" value="f" id="Female">Female</label>
+									</label>
+									<label for="others" class="radio-inline">
+										<input type="radio" name="gender" value="o" id="Others">others</label>
+								</div>
+							</div>
+						
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input type="text" class="form-control" id="email" name="email"/>
+							</div>
+							<div class="form-group">
+								<label for="password">Password</label>
+								<input type="text" class="form-control" id="password" name="password"/>
+							</div>
+							<div class="form-group">
+								<label for="number">Phone Number</label>
+								<input type="text" class="form-control" id="number" name="number"/>
+							</div>
+							<input type="submit" name="submit" class="btn btn-primary"/>
+						</form>
 					</div>
 				</div>
-				<div class="input-group">
-					<input type="text" id="email" required>
-					<label for="email"><i class="fas fa-envelope"></i>Email Id</label>
-				</div>
-				<div class="input-group">
-					<textarea id="message" rows="8" required></textarea>
-					<label for="message"><i class="fas fa-comments"></i>Your Message</label>
-				</div>
-				<button type="submit"><i class="fas fa-paper-plane"></i>SUBMIT</button>
-			</form>
+			</div>
+
+					<div class="col-md-6 signup">
+						<h2>SIGN UP</h2>
+						<form action="signup.php" method="post">
+							<div class="form-group">
+								<label>Name</label>
+								<input type="text" name="name" class="form-control" required>
+							</div>
+							<div class="form-group">
+								<label>UserName</label>
+								<input type="text" name="username" class="form-control" required>
+							</div>
+							<div class="form-group">
+								<label>Password</label>
+								<input type="password" name="password" class="form-control" required>
+							</div>
+							<div class="form-group">
+								<label>Re Password</label>
+								<input type="password" name="re_password" class="form-control" required>
+							</div>
+							<button type="submit" class="btn btn-primary">Signup</button>
+						</form>
+					</div>
 		</div>
+	</section>
+		
+		
+				
 
 		<!----BLOG SECTION--------->
 		<section class="recent-blog">
