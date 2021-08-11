@@ -22,16 +22,22 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 $number = $_POST['number'];
 
-echo "firstName ".$firstName.", lastName ".$lastName." gender: ".$gender.",email ".$email." password ".$password." number ".$number;
+$hash_default_salt = password_hash($password, PASSWORD_DEFAULT);
+
+echo "firstName ".$firstName.", lastName ".$lastName." gender ".$gender.",email ".$email." password ".$password." number ".$number;
 //Database connection
 $conn = new mysqli('localhost','root','','test');
 if($conn->connect_error){
 	die("Connection Failed : " .$conn->connect_error);
 } else {
 	$stmt = $conn->prepare("insert into registration(firstName, lastName, gender, email, password, number) values(?, ?, ?, ?, ?, ?)");
-	$stmt->bind_param('ssssss', $firstName, $lastName, $gender, $email, $password, $number);
-	$stmt->execute();
-	echo "Registration successfully...";
+	$stmt->bind_param('ssssss', $firstName, $lastName, $gender, $email, $hash_default_salt, $number);
+	if($stmt->execute()){
+	echo "<br>Registration successfully...<br>";
+}else{
+	echo "<br> <h1>Ooos</h1>";
+	echo $stmt->error;
+}
 	$stmt->close();
 	$conn->close();
 }

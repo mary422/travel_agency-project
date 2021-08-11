@@ -1,0 +1,113 @@
+.about-us{
+	padding: 100px 0;
+}
+.about-us h1{
+	text-align: center;
+	margin: 50px auto 100px;
+	color: #04AA6D;
+	font-size: 22px italic;
+	font-weight: 700;
+}
+.about-us p{
+	font-size: 20px;
+	font-weight: 600;
+	margin: 2px;
+}
+.main{
+	width: 100%;
+	min-height: 380px;
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+
+}
+.about-box h4{
+	display: block;
+	text-align: center;
+	color: green;
+	margin-top: 10%;
+	font-size: 37px;
+	text-decoration: underline;
+	font-weight: 700;
+}
+.about-box h4::after{
+	content: '';
+	width: 40px;
+	height: 30px;
+	background: linear-gradient(to right, #5205f0, white );
+	position: absolute;
+	left: -5px;
+	bottom: -5px;
+	z-index: -1;
+}
+.about-box p{
+	padding: 160px 10px 10px 10px;
+	font-size: 20px;
+	font-weight: 600;
+}
+.shadow1{
+	height: 235px;
+	width: 85%;
+	background: white;
+	position: absolute;
+	border-radius: 10px;
+	bottom: 0;
+	left: 10%;
+	right: 10%;
+	z-index: -1;
+	align-items: center;
+	box-shadow: 0 0 20px -15px black;
+	transition: transform .7s;
+}
+.shadow2{
+	height: 235px;
+	width: 75%;
+	background: white;
+	position: absolute;
+	border-radius: 10px;
+	bottom: 0;
+	left: 18%;
+	right: 18%;
+	z-index: -2;
+}
+.main:hover .about{
+	transform: translateY(-50px);
+}
+.main:hover .shadow1{
+	transform: translateY(-25px);
+}
+.about-box{
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.core-values{
+	padding: 100px 0;
+	background: #efefef;
+}
+.values-box h1{
+	padding: 100px 0;
+	margin-top: 0%;
+	text-align: center;
+	padding-bottom: 30px;
+}
+.values-box p{
+	line-height: 24px;
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 0;
+}
+.row li {
+  display: inline-flex;
+  list-style: none;
+  color: green;
+  font-size: 20px;
+  font-weight: 600;
+  list-style: circle;
+  box-shadow: rgba(0,0,0,0.5);
+}
+
+.row ul li:hover {
+  background-color: #2bab0d;
+  border-radius: 3px;
+}

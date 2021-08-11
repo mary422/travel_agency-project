@@ -326,6 +326,11 @@ body{
 	padding: 100px 0;
 	background: #efefef;
 }
+.setion-title h1{
+	padding: 100px 0;
+	text-align: center;
+	padding-bottom: 30px;
+}
 .services .icon-circle{
 	text-align: center;
 	padding: 40px 20px;
@@ -383,6 +388,11 @@ body{
 .team{
 	padding: 100px 0;
 	background: #efefef;
+}
+.section-title h1{
+	padding: 100px 0;
+	text-align: center;
+	padding-bottom: 30px;
 }
 .team .member{
 	margin-bottom: 20px;
@@ -445,6 +455,11 @@ body{
 	position: relative;
 	z-index: 1;
 }
+.section-title h1{
+	padding: 100px 0;
+	text-align: center;
+	padding-bottom: 30px;
+}
 .package:after{
 	position: absolute;
 	left: 0;
@@ -498,6 +513,11 @@ body{
 	padding-top: 130px;
 	padding-bottom: 140px;
 	background: #f7fafd;
+}
+.section-title h1{
+	padding: 100px 0;
+	text-align: center;
+	padding-bottom: 30px;
 }
 .historical-places .single-dest{
 	background: #fff;
